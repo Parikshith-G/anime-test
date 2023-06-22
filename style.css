@@ -1,0 +1,276 @@
+body{
+  background-color: grey !important;
+}
+.local {
+  height: 100vh;
+  width: 50%;
+}
+
+.global {
+  height: 100vh;
+  width: 50%;
+}
+.top-part {
+  display: flex;
+  border-radius: 5rem;
+  background-color: rgb(180, 154, 154);
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.bottom-part {
+  height: 50vh;
+}
+
+.controls {
+  padding-top: 10px;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+.buton {
+  display: inline-block;
+  background-color: white;
+  font-size: 1 rem;
+  font-family: inherit;
+  border: none;
+  border-radius: 10rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.buton:hover {
+  background-color: rgb(128, 125, 125);
+}
+
+.buton--text {
+  display: inline-block;
+  background: none;
+  font-size: 1.7rem;
+  font-family: inherit;
+  color: var(--color-primary);
+  border: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.butons {
+  display: inline-block;
+  background-color: white;
+  font-size: 1 rem;
+  font-family: inherit;
+  border: none;
+  border-radius: 10rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  width: 120px;
+}
+
+.butons:hover {
+  background-color: rgb(128, 125, 125);
+}
+
+.butons--text {
+  display: inline-block;
+  background: none;
+  font-size: 1.7rem;
+  font-family: inherit;
+  color: var(--color-primary);
+  border: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.top-right-centrer {
+  position: relative;
+}
+.welcome {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: medium;
+  font-weight: 500;
+  font-style: italic;
+  padding-top: 10px;
+}
+
+.pin-change-text,
+.name-change-text {
+  border-radius: 10rem;
+  border: 0px;
+  width: 200px;
+  padding: 2px 2px 2px 10px;
+}
+.pin-change-text::-webkit-inner-spin-button,
+.pin-change-text::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.name,
+.pin {
+  padding: 10px 10px 10px 10px;
+}
+.dele {
+  padding-left: 100px;
+}
+
+.send-message-button {
+  border-radius: 5px;
+  width: 40px;
+  height: 30px;
+  background-color: grey;
+  border: none;
+}
+.send-message-button:hover {
+  background-color: white;
+}
+.global-text {
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  height: 30px;
+}
+.send-message-button-main {
+  text-align: right;
+}
+.text-and-send {
+  width:50%;
+  position: absolute;
+  bottom: 0;
+}
+.butona {
+  display: inline-block;
+  background-color: white;
+  font-size: 1 rem;
+  font-family: inherit;
+  border: none;
+  border-radius: 10rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  width: 60px;
+}
+.butona:hover {
+  background-color: grey;
+}
+.login-maker {
+  display: none; /* Hide the modal by default */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.login-internal {
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 25px;
+  background-color: lightgreen;
+}
+.name-of-login,
+.pin-of-login {
+  padding: 10px 10px 10px 10px;
+}
+.login-text,
+.login-pin {
+  border-radius: 10rem;
+  border: none;
+  width: 100%;
+  padding-left: 10px;
+}
+.login-pin::-webkit-inner-spin-button,
+.login-pin::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.login-buton {
+  display: inline-block;
+  background-color: white;
+  font-size: 1 rem;
+  font-family: inherit;
+  border: none;
+  border-radius: 10rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  width: 60px;
+}
+
+.sign-up-maker {
+  display: none; /* Hide the modal by default */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.sign-up-internal {
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 25px;
+  background-color: lightgreen;
+}
+.name-of-sign-up,
+.pin-of-sign-up {
+  padding: 10px 10px 10px 10px;
+}
+.sign-up-text,
+.sign-up-pin {
+  border-radius: 10rem;
+  border: none;
+  width: 100%;
+  padding-left: 10px;
+}
+.sign-up-pin::-webkit-inner-spin-button,
+.sign-up-pin::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.sign-up-buton {
+  display: inline-block;
+  background-color: white;
+  font-size: 1 rem;
+  font-family: inherit;
+  border: none;
+  border-radius: 10rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  width: 120px;
+}
+
+.changer {
+  display: none;
+}
+.send-message-box {
+  display: none;
+}
+.those-messages{
+  padding:3px 3px 3px 3px;
+  background-color: aqua;
+
+  
+}
+
+.smol{
+  font-size: x-small;
+  text-align: right;
+  padding-top: 15px;
+}
+.message-container-man{
+  border-radius: 1rem;
+  max-height:200px;
+  overflow-x: hidden;
+}
+
